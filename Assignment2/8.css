@@ -1,0 +1,38 @@
+table{
+    border-collapse:collapse;
+        width:800px;
+        margin-top:50px;
+        margin-left:250px;
+        padding:20px;
+}
+#a{
+    text-align:left;
+    cell-spacing:100px;
+}
+table th{
+    text-align:center;
+    background-color:  rgb(245, 223, 181);
+    padding: 8px 40px 8px 10px;
+    border:1px solid white;
+}
+table td {
+    border:1px solid white;
+    padding:4px 8px;
+    text-align:right;
+
+}
+table tr:nth-child(even) td {
+    background-color: rgb(245, 223, 181);
+    outline:rgb(133, 66, 49);
+    
+}
+#b{
+    background-color: gray;
+    color:white;
+}
+#c{
+    background-color: rgb(219, 113, 74);
+    color:white;
+    font-size:15px;
+    font-family: Arial;
+}

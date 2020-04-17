@@ -1,0 +1,28 @@
+
+body{
+    background-color: rgb(166, 199, 100); ;
+}
+table{
+    border: rgb(166, 199, 100);
+    border:collapse;
+    background-color: rgb(166, 199, 100);
+    margin:10px;
+}
+table, td, th{
+    width:1000px;
+    margin-top:50px;
+    margin-left:250px;
+    
+    text-align: left;
+    padding:20px;
+}
+th{
+    background-color: rgb(214, 216, 89);
+}
+td {
+    background-color:white;
+
+}
+
+
+
