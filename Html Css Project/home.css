@@ -1,0 +1,45 @@
+body{
+    background-image:url('img/5.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    }
+    
+    #b{
+    font-size:50px;
+    font-family:Candara Light;
+    font-weight:Bolder Lighter;
+    position:relative;
+    top:-70px;
+    color:whitesmoke;
+    text-align:right;
+    Text-transform:Capitalize;
+    text-decoration:none;
+    left:5px;
+    }
+    img{
+        width: 00px;
+        height:150px;
+        border-radius:3px;
+        position:relative;
+        top:10px;
+        left:-500px;
+        opacity:0.9;
+    }
+    a:hover{
+    font-size:50px;
+    font-family:Comic Sans MS;
+    color:#686669;
+    }
+    p{
+    text-align:left;
+    position:relative;
+    top:40px;
+    font-size:90px;;
+    font-family:Elephant;
+    text-shadow:3px 1px grey;
+    color:whitesmoke;
+    
+    }
+    
+    

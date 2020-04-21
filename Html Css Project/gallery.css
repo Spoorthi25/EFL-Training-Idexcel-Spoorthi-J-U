@@ -1,0 +1,49 @@
+
+    a{
+    font-size:2em;
+    font-family:Constantia;
+    color:black;
+    align:right;
+    Text-transform:Capitalize;
+    }
+    #b{
+        width: 70px;
+        height:70px;
+        border-radius:3px;
+        position:absolute;
+        top:5px;
+        opacity:0.9;
+    }
+    h1{
+    Font-color:white;
+    Font-style:Bold;
+    Font-size:70px;
+    text-shadow:3px 1px grey;
+    text-align:center;
+    }
+    img{
+    margin:5px 10px;
+    
+    height:300px;
+    width:320px;
+    }
+    td{
+    font-size:2em;
+    }
+    img:hover{
+    opacity:0.9;
+    transform:scale(1,1);
+    }
+    button{
+        background-color:white;
+        color:whitesmoke;
+        padding:14px 20px;
+        margin:8px 26px;
+        border:none;
+        cursor:pointer;
+        width:100px;
+        font-size:20px;
+        margin-left:1200px;
+        border-radius:8px;
+        }
+    

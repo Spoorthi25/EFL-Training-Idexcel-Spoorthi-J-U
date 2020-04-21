@@ -1,0 +1,61 @@
+body{
+  background-image:url('img/01.webp');
+  color:black;
+ 
+}   
+img{
+    margin-left:700px;
+   
+    height:300px;
+    width:520px;
+    }
+    .para{
+align:justify;
+position:relative;
+
+bottom:300px;
+height:100px;
+width:600px;
+
+Font-size:20px;
+
+  }
+  #a{
+      height:300px;
+      width:320px;
+      margin-left:-650px;
+  }
+  .pa{
+    align: right;
+    position:relative;
+    margin-left:700px;
+    bottom:300px;
+    height:100px;
+    width:600px;
+    Font-size:20px;
+    
+    
+  }
+  .par{
+    align: right;
+    position:relative;
+    margin-left:700px;
+    bottom:300px;
+    height:100px;
+    width:600px;
+    Font-size:20px;
+    
+  }
+  
+  button{
+    background-color:white;
+    color:whitesmoke;
+    padding:14px 20px;
+    margin:8px 26px;
+    border:none;
+    cursor:pointer;
+    width:100px;
+    font-size:20px;
+    margin-left:1200px;
+    border-radius: 8px;
+    }

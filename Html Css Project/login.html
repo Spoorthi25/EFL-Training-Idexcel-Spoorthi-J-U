@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet"href="login.css">
+</head>
+<body background="">
+   
+  <button onclick="document.getElementById('modal-wrapper').style.display='block'"style="width:200px;margin-top:200px;margin-left:540px;height:100px;background-image:;">
+    Login</button>
+    
+<div id="modal-wrapper" class="modal">
+         <form class="modal-content animate" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'"class="close" title="Close PopUp">&times;</span>
+                <img src="img/61.jpg" alt="Avatar" class="avatar">
+                
+            </div>
+            <div class="container">
+                <input type="text" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">
+                <button type="submit"> <a href="home.html">Login</a></button>
+                <input type="checkbox" style="margin:26px 30px;">Remember me
+               <a href="#" style="text-decoration:none;float:right;margin-right:34px;margin-top:26px;">Forgot Password ?</a>
+            
+            </div>
+        </form>
+</body>
+</html>

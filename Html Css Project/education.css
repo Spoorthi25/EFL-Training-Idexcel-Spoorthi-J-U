@@ -1,0 +1,37 @@
+body{
+    background-image: url('img/education.JPG');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    
+}
+
+
+table th{
+    text-align:center;
+    
+    padding: 8px 40px 8px 10px;
+    border:1px solid black;
+}
+table td {
+    border:1px solid black;
+    padding:4px 8px;
+    text-align:right;
+
+}
+li{
+    font-size: 18px;
+}
+button{
+    background-color:white;
+    color:whitesmoke;
+    padding:14px 20px;
+    margin:8px 26px;
+    border:none;
+    cursor:pointer;
+    width:100px;
+    font-size:20px;
+    margin-left:1200px;
+    border-radius:8px;
+    }
+
