@@ -1,0 +1,116 @@
+.carousel-inner img{
+    width:1250px;
+    height: 500px;
+}
+
+    #pa{
+        
+            text-align:left;
+            position:relative;
+            top:40px;
+            font-size:90px;;
+            font-family:Elephant;
+            text-shadow:3px 1px grey;
+            color:whitesmoke;
+            
+            
+    }
+    .para{
+        align:justify;
+        position:relative;
+        bottom:350px;
+        height:400px;
+        width:1350px;
+        top:20px;
+        color:whitesmoke;
+        text-align: left;
+        Font-size:25px;
+        Font-style:Italic;
+        word-spacing:5px;
+        }
+
+        .main section{
+            margin: 0 auto;
+            margin-top:130px;
+            padding: 0;
+        
+        
+        }
+        .modal-content {
+            background-color:black;
+            opacity: .95;
+            padding: 20px;
+           
+            width:400px;
+            
+            
+        }
+    
+   
+    .user-img img{
+        height: 100px;
+        width:100px;
+        border-radius:100px;
+        border-radius:5px;
+       
+        margin:30px;
+    
+    } 
+    
+    .form-group{
+        margin-bottom: 35px;
+    
+    }
+    .form-group input{
+        height:42px;
+        border-radius: 5px;
+        border:0;
+        font-size:18px;
+        padding-left:54px;
+    }
+    .form-group::before {
+        font-family:'Font Awesome\ 5 Free';
+        content:"\f007";
+        position: absolute;
+        font-size: 22px;
+        color: #555e60;
+        left:28px;
+        padding-top: 4px;
+    }
+    .form-group:last-of-type::before {
+        
+        content:"\f023";
+       
+    }
+    
+.svg-inline--fa {
+    font-size:20px;
+    margin-right:7px;
+}
+.forgot {
+    padding:5px 0 25px;
+}
+.forgot a {
+    color:#c2fbfe;
+}
+
+footer {
+    background-color: #40474e;
+    color:white;
+    padding:2em 0 3rem;
+    margin-top: 1rem;
+}
+footer a{
+    color:white;
+}
+footer svg.svg-inline--fa:hover {
+     color:#1ebba3;
+}
+
+
+
+
+
+
+
+    
