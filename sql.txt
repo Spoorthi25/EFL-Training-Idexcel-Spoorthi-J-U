@@ -1,0 +1,104 @@
+select version();
+
+To create database
+ -create database testdb;
+\l
+
+To connect test with database name
+\c testdb
+
+To clear the screen
+\!   cls
+
+Syntax to create table
+ create table table_name(column_name1 datatype constraints,column_name2 datatype constraints)
+eg: create table person(id int primary key, name varchar(150),email varchar(200));
+
+To describe a particular table
+ \d table name
+ eg;\d person
+ 
+Alter the table
+-alter table person add column age int;
+-alter table person drop column age;
+-alter table person rename column name to pname;
+
+To rename the table
+-alter table person rename to emp;
+
+To change current database
+\c databasename;
+eg; \c test;
+
+Drop
+ drop database dbname;
+eg: drop database test;
+ drop table emp;
+
+DML
+insert =insert into table_name(column_name1,column_name2,column_name3,...column_name,)values(value1,value2,value3,  valuen)
+eg: insert into person(id,name email)values(1,'rahul','rahul@gmail');
+ another format
+insert into table_name values(value1,value2,value3..valuen);
+Ex- insert into person values(1,'rahul','rahul@gmail');
+
+Assignment
+1.Create a table  table name is employee with attribute as empid,ename,designation,hiredata(not null),salary,age,emailId,deptno,mobileno(not null)
+and insert 10 records.
+  -create table employee(id int,ename varchar(50), designation varchar(50),hiredate date NOT NULL,salary varchar(20),age int,email varchar(20),deptno varchar(20),mobileNo varchar(20) NOT NULL,primary key(id));
+
+insert into employee values(001,'Arun','Software developer','2019-04-25',100000,25,'arun@gmail',10,'9876543210');
+insert into employee values(002,'Arjun','Web developer','2019-04-26',200000,26,'arjun@gmail',20,'9876543211');
+insert into employee values(003,'Bhanu','Tester','2019-03-25',60000,27,'bhanu@gmail',30,'9876543222');
+insert into employee values(004,'Charan','HR','2019-04-19',80000,29,'charan@gmail',40,'9876843210');
+insert into employee values(005,'Dhanush','Tester','2019-04-10',90000,31,'dhanush@gmail',10,'8876543210');
+insert into employee values(006,'Harish','Clerk','2019-03-5',100000,28,'harish@gmail',20,'9876543000');
+insert into employee values(007,'Kavana','Tester','2019-02-25',900000,35,'kavana@gmail',30,'8886543210');
+insert into employee values(008,'Nithin','Web developer','2019-04-15',100000,36,'nithin@gmail',20,'9876333210');
+insert into employee values(009,'Suhas','Software developer','2019-01-29',60000,30,'suhas@gmail',10,'9876540000');
+insert into employee values(010,'Sumanth','HR','2019-04-01',50000,34,'sumanth@gmail',20,'9663463098');
+
+Data Query Language(DQL)
+
+Select
+Three different way to retrive the data from table
+1.Projection
+2.Selection
+3.Join
+
+Selection
+Syntax of Select
+    Select*/[Distinct] column_name/expression[Alias] from table_name;
+ eg:  select * from employee;
+
+Projection
+Syntax
+ select column_name from table_name;
+   eg: select  ename from employee;
+
+Type a query to insert more than one query in a same query
+insert into employee values(010,'Sumanth','HR','2019-04-01',50000,34,'sumanth@gmail',20,'9663463098'),();
+
+Update
+Syntax- update table_name set coloumn_name=value;
+eg: update employee set salary=25000;
+
+Delete
+Syntax- delete from table_name;
+eg: select from employee;
+
+Where Clause
+Syntax-select *from table_name where condition;
+eg: update employee set salary=30000 where id=1;
+      delete from employee where id=1;
+
+To select using condition
+eg: select * from employee where id=2;
+
+order of execution-   from
+                                where
+                                select
+     -where conditions executes by row by row
+
+
+
