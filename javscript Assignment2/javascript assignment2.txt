@@ -1,0 +1,359 @@
+Javascript Assignment2
+
+Easy 
+
+1.Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers
+
+          function bitwiseAND(n1, n2) {
+	return n1&n2;
+          }
+
+          function bitwiseOR(n1, n2) {
+	return n1|n2;
+          }
+
+         function bitwiseXOR(n1, n2) {
+	return n1^n2
+          }
+
+2.Matchstick Houses
+              
+                function matchHouses(step) {
+	if(step==0){
+		return 0
+	}
+	else if(step==1){
+		return 6
+	}
+	else if(step>1){
+		return (step*6)-(step-1)
+	}
+                }
+
+3.Create a function that takes a number as an argument and returns the highest digit in that number.
+                 const highestDigit=number=>Math.max(..`${number}`);
+
+4.Return remainder of two numbers
+                  
+                   function remainder(x, y)
+                   {
+	return x%y;
+	}
+
+5.Add up the numbers from a single number
+                 
+                 function addUp(num) 
+                 {
+	return (num*(num+1))/2;
+                 }
+
+6.Sort an Array by String Length
+                  
+                function sortByLength(arr) 
+                {
+                  return arr.sort(function(a,b)
+                 {
+                  return a.length-b.length;
+	});
+                }
+
+7.find perimeter of reactangle
+                   
+                 function findPerimeter(height, width) 
+                 {
+	return (height+width)*2;
+                  }
+
+8.Convert a number to base2
+                     
+                    function binary(decimal)
+                    {
+                       return decimal.toString(2);
+                    }
+
+9.Create a function that takes an array of numbers and return both minimun and maximum numbers.
+                 
+                    function minMax(arr)
+                   {
+                     return [Math.min(..arr),Math.max(..arr)];
+                   }
+
+10.Area of Triangle.
+               
+                function triArea(base, height) 
+                {
+	return base*height/2;
+                 }
+
+Medium
+
+1. This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are:
+1, 3, 6, 10, 15
+This means that the first triangle has just one dot, the second one has three dots, the third one has 6 dots and so on.
+Write a function that gives the number of dots n with its corresponding triangle number of the sequence.
+                  
+                  function triangle(n) 
+                   {
+	    return n*(n+1)/2;
+                   }
+
+2.Maximum Edge of a Triangle
+                   
+                  function nextEdge(side1,side2)
+                  {
+                        return side1+side2-1;
+                   }
+
+3.Create a function that takes a number (step) as an argument and returns the amount of boxes in that step of the sequence.
+Box Sequence Image
+Step 0: Start with 0
+Step 1: Add 3
+Step 2: Subtract 1
+Repeat Step 1 & 2 ...
+
+                   function boxSeq(step) {
+	if(step===0){
+		return 0;
+	}
+	if(step%2===0){
+		return boxSeq(step-1)-1
+	}else{
+		return boxSEQ(step-1)+3
+	}
+                 }
+
+4.Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
+
+Examples
+missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]) ? 5
+                            
+                        function missingNum(arr)
+                        {
+	     for(var i=1;i<=10;i++)
+		if(arr.indexOf(i)===-1)
+			return i;
+                           }
+
+5.Adding Numbers
+Create a function that takes two number strings and returns their sum as a string.
+                               
+                                function add(n1, n2)
+                                 {
+	                   if(!n1|| !n2)
+			return "Invalid Operation "
+			return String(Number(n1)+Number(n2))
+                                       }
+
+
+6.Return the Next Number from the Integer Passed
+Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+Examples
+addition(0) ? 1
+addition(-3) ? -2 
+                      
+                    function addition(num)
+                       {
+                              return ++num;
+                       }
+
+
+7.Find the Mean of All Digits
+Create a function that returns the mean of all digits.
+
+Examples
+mean(42) ? 3
+
+                   function mean(num)
+                  {
+	var sum=0;
+	var a=0;
+	var negative=false;
+	
+	if(num<0){
+		negative=true;
+	}
+	while(num!=0)
+                   {
+		sum+=num%10;
+		num=Math.trunc(num/10)
+		a++;
+	}
+	if(negative==true)
+                    {
+		return Math.trunc(sum/a)*(-1)
+	}
+	else return Math.trunc(sum/a)
+                   }
+
+8.Even or Odd number of characters
+                    
+                   function factorGroup(num)
+                     {
+                              var sum=0;
+                    for(var i=1;i<=num;i++)
+                       {
+                          if(num%i==0)
+                         {
+                             sum=sum+1;
+                       }
+                  }
+                   if(sum%2==0){
+                             return "even";
+                  }
+                     else
+                      {
+                            return "odd";
+                      }
+                   }
+                   
+9.Days in a Month
+Create a function that takes the month and year (as integers) and returns the number of days in that month.
+                                   
+                                  function days(month, year) 
+                                      {
+	                 return new Date(year,month,0)getDate();
+                                         }
+
+10.Reverse a number.
+                       
+                      function rev(n)
+                      {
+                         if(n<0)
+                       {
+                          n*=-1
+                      }
+                            return n.toString().split("").reverse().join("");
+                      }
+
+11.Equality of 3 Values
+Create a function that takes three integer arguments (a, b, c) and returns the amount of integers which are of equal value.
+
+Examples
+equal(3, 4, 3) ? 2
+
+equal(1, 1, 1) ? 3
+
+equal(3, 4, 1) ? 0
+                   
+                   function equal(a, b, c) 
+                   {
+	if(a===b && a===c)
+                    {
+		return 3;
+	}
+	if(a===b || a===c || b===c)
+                   {
+		return 2;
+	}
+	return 0;
+                    }
+
+12.Recursion: Fibonacci Numbers
+Fibonacci numbers are created in the following way:
+
+F(0) = 0
+F(1) = 1
+...
+F(n) = F(n-2) + F(n-1)
+Write a function that calculates the nth Fibonacci number.
+                    
+                   function fib(n)
+                   {
+	var arr=[0,1];
+	for(var i=2;i<=n;i++)
+                   {
+		arr[i]=arr[i-1]+arr[i-2];
+	}
+	return arr[n];
+                   }
+
+13.Sort By Index of Character
+Write a function that sorts an array of characters alphabetically in ascending order (a-z) by the character at the n-th character.
+                                     
+                                  function sortByCharacter(arr, n)
+                                       {
+	                       return arr.sort((a,b)=>a[n-1]>b[n-1])
+                                        }
+
+14.Square Every Digit
+Create a function that squares every digit of a number.
+
+Examples
+squareDigits(9119) ? 811181
+squareDigits(2483) ? 416649
+
+                     function squareDigits(n)
+                     {
+	   var arr=[]
+	   for(var i=0;i<n.toString().length;i++)
+                         {
+		var sqt=Math.pow(Number(n.toString().charAt(i)),2)
+		arr.push(sqt)
+	       }
+	         return Number(arr.join(''));
+                         }
+
+15.volume of a cone
+                  
+                 function conevolume(h,r)
+                  {
+                   return Math.round((Math.PI*Math.pow(r,2)*h/3)*100)/100;
+                  }
+       
+16.Basic Calculator
+Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers.
+                   
+                 function calculator(num1, operators, num2) 
+              {
+	if(operators=='+')
+		return num1+num2;
+	if(operators=='-')
+		return num1-num2;
+	if(operators=='*')
+		return num*num2;
+	if(operators=='/')
+		return num1/num2;
+	else return "cant divide"
+               }
+
+17.Converts key,value into object
+                      
+                       function ObjectToArray(obj)
+                        {
+                         const myArray=Object.entries(obj);
+                         return myArray;
+                       }   
+  
+18.Concat Variable Number of Input Arrays.
+                       
+                        function concat(..args)  
+                        {
+                         return[].concat(..args);
+                        }
+
+19.Solving Exponential Equations With Logarithms
+Create a function that takes a number a and finds the missing exponent x so that a when raised to the power of x is equal to b.
+Examples
+solveForExp(4, 1024) ? 5
+solveForExp(2, 1024) ? 10
+
+             function solveForExp(a, b) 
+              {
+	return Math.round(Math.log(b)/Math.log(a));
+              }
+
+20.factorize a number
+                
+                  function factorize(num)
+                    {
+                     let factors=[ ]
+                  for(i=1;i<=num;i++)
+                     {
+                   if(num%i===0)
+                      {
+                        factors.push(i)
+                      }
+                   }
+                   return factors
+                  }
