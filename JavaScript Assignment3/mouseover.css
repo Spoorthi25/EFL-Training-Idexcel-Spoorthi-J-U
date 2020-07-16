@@ -1,0 +1,23 @@
+ .left
+{
+    background-color: red;
+    width:400px;
+    height:400px;
+    float:left;
+}
+
+#center{
+       background-color: blue;
+       width:400px;
+       height:400px;
+       float:left;
+       font-family: cursive;
+}
+
+#divright{
+    background-color: brown;
+    width:400px;
+    height:400px;
+    float:left;
+}
+
