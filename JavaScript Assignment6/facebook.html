@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.css">
+    <style>
+      td{
+        padding: 8px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="font-weight: bolder; font-size: 25px;height:125px;background-color:#3b5998">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><h1>facebook</h1> <span class="sr-only">(current)</span></a>
+            </li>
+           </ul>
+           <div class="row">
+             <div class="col-4">
+         <p style=color:white;font-size:18px;margin-top:12px;>Email</p>
+                
+           <input type="text"><br>
+          <span style="color:white;font-size:18px;"><input type="checkbox" > Keep me log In</span>
+          
+</div>
+    <div class="col-4" style="margin-left: 40px;">
+      <p style=color:white;font-size:18px;margin-top:12px;>Password</p>
+           <input type="text">
+      <br>
+           <span style="color:white;font-size:18px;"><p>Forget password?</p></span>
+      </div>
+    <button type="submit" class="btn btn-primary-fade" style="margin-left: 40px;height:60px;margin-top:40px;
+    color:white;font-weight:20px;background-color: #3b5998;">Login In</button>
+          </form>
+        </div>
+      </nav>
+<section>
+ <form class="card mt-2" action="" name="SignUp" onsubmit="validate();return false" method="GET">
+  <div class="row" style="height:900px;">
+  <div class="col-md-7" style="background-color:rgb(240, 241, 248);height:900px;">
+    <div>
+      <h3 style="margin-top: 30px;margin-left: 20px;">Facebook helps you connect and share with <br>the people in your life.</h3>
+     </div>
+    <img src="images/fb.JPG" style="height:300px;width:700px; margin-top: 50px;"/>
+  </div>
+  <div class="col-md-5" style="height:800px;background-color:rgb(240,241,248);">
+    <h1>Create an Account</h1>
+    <h3>Its  Free and always will be</h3>
+    <form style="margin:0 auto;width:100%;background-color:rgb(240,241,248);">
+    <table>
+      <tr>
+        <td style="width:50%;"><input type="text" id="user" placeholder="Name" class="form-control"/>
+          <span id="user1" style="color:red;visibility: hidden">Invalid</span></td></tr>
+         </td>
+       </tr>
+    
+      
+      <tr><td colspan="2"><input type="text" id="txt1" placeholder="Email" class="form-control"/>
+        <label id="lbltxt" style="color:red;visibility: hidden">Invalid</label></td></tr>
+      
+      <tr><td colspan="2"><input type="number" id="txt3" placeholder="Phone Number" class="form-control"/>
+        <label id="lbltxt3" style="color:red;visibility: hidden">Invalid</label>
+      </td></tr>
+      <tr><td colspan="2"><input type="password" id="txt2" placeholder="Password" class="form-control"/>
+        <label id="lbltxt2" style="color:red;visibility: hidden">Invalid</label>
+      </td>
+        <tr><td><h3>Birthday:</h3></td></tr>
+        <tr><td colspan="3"><select>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select>
+          <option value="">Jan</option>
+          <option value="">Feb</option>
+          <option value="">Dec</option>
+        </select>
+        <select>
+          <option value="">1997</option>
+          <option value="">2000</option>
+          <option value="">2020</option></select>
+           <a>Why do I need to provide my birthday?</a>
+      
+      </td></tr>
+    <tr>
+<td>
+  <span style="font-size: 24px;color:black;"><input type="radio" name="gender" id="gender"> Female</span>
+  <span style="font-size: 24px;color:black;"> <input type="radio" name="gender"> Male</span>
+    </td>
+  </tr>
+  <tr><td colspan="3"><p>By clicking Sign Up,you agree to our <strong>Terrms</strong> and that you have read our <strong>Data Policy</strong> including our <strong>Cookies use</strong></p></td></tr>
+  <tr><td> <button type="submit" class="btn btn-success" style="width: 200px;">Sign Up</button></td></tr>
+    </table>  
+    <hr>
+    <p><strong>Create a Page </strong>for a celebrity,band or business.</p>
+      </form>
+  
+  </div>
+  </div>
+  <div>
+    <script src="facebook.js"></script>
+    <script src="/js/jquery-3.5.0.js"></script>
+    <script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  </body>
+  </html>
