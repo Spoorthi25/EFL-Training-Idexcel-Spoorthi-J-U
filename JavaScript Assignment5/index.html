@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myStyle{
+            width:600px;
+            height:400px;
+            background-color: gray;
+            text-align:center;
+            font-family: cursive;
+            font-size: 30px;
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phones</h1>
+    <ul id="list">
+    <li onclick="del(this)">Samsung</li>
+    <li onclick="del(this)">MI</li>
+    <li onclick="del(this)">Iphone</li>
+    </ul>
+    
+    <input  onclick="enter()" type="text" id="txtVal">
+    <button onclick="addLi()">Add</button>
+    <button onclick="deleteNode()">Delete</button>
+
+    <button onclick="AddCss()">Add Css</button>
+    <button onclick="removeCss()">Remove Css</button>
+
+    <hr>
+    <h1>Sim</h1>
+    <ul id="demo">
+    <li onclick="del(this)">Airtel</li>
+    <li onclick="del(this)">Jio</li>
+    <li onclick="del(this)">Idea</li>
+    </ul>
+
+    <input type="text" id="txtval">
+    <button onclick="addList()">Add</button>
+    <button onclick="deleteList()">Delete</button>
+
+    <button onclick="Add()">Add CssStyle</button>
+    <button onclick="remove()">Remove CssStyle</button>
+
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
